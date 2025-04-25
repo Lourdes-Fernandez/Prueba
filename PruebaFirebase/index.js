@@ -6,7 +6,9 @@ const btnSubmit = document.getElementById('btn_todo_form');
 const tabla = document.getElementById('tabla');
 
 const getContactos = () => getDocs(collection(db, 'Contactos'));
-const collectionRef = collection(db, 'Contactos')
+const collectionRef = collection(db, 'Contactos');
+
+let idEditando = null;
 
 // CREATE
 const crearContacto = async (nombre, email, telefono) => {
@@ -78,8 +80,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 });
 
 // UPDATE
-let idEditando = null;
-
 window.editar = (id, nombre, email, telefono) => {
     todoForm['todo_nombre'].value = nombre;
     todoForm['todo_email'].value = email;
