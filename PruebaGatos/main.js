@@ -5,11 +5,11 @@ function loadGatos() {
             console.log(data);
             const gatitos = document.getElementById('gatitos');
 
-            data.forEach(gato => {
-                //              const img = document.createElement('img');
-                //              img.src = gato.url;
-                //              gatitos.appendChild(img);
-            });
+            //data.forEach(gato => {
+            //              const img = document.createElement('img');
+            //              img.src = gato.url;
+            //              gatitos.appendChild(img);
+            //});
 
             data.forEach(gato => {
                 gatitos.innerHTML += `<img src = "${gato.url}" alt="Gato" class="w-full object-cover rounded-lg"/>`;

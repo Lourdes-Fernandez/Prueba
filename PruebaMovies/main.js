@@ -20,7 +20,7 @@ function getMovies(reset = false) {
     const options = {
         method: "GET",
         headers: {
-            accept: "application/json",
+            accept: "application/json", // Accept: -> recibir del servidor -- 'Content-Type': -> enviar al server
             Authorization: `Bearer ${token}`,
         },
     };
